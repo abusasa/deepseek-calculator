@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="ru" data-type="software">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2 000 ₸ в DeepSeek — это сколько? Калькулятор</title>
+  <meta name="description" content="Переведите тенге в токены DeepSeek: книги, подкасты, договоры, задачи в OpenCode. Реальные цены, налог, курс и минусы.">
+  <meta name="page-type" content="software">
+  <meta name="site-kind" content="software">
+  <meta property="og:title" content="2 000 ₸ в DeepSeek — это сколько?">
+  <meta property="og:description" content="Калькулятор: тенге → токены → книги, подкасты и дни работы в OpenCode. С реальными ценами и минусами.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f4eee3">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="skip" href="#calculator">К калькулятору</a>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="deepseek budget, на главную">deepseek<span>/</span>budget</a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="#compare">Сравнения</a>
+        <a href="#opencode">OpenCode</a>
+        <a href="#minus">Минусы</a>
+        <a href="#prices">Тарифы</a>
+      </nav>
+      <div class="nav-meta">$1 = 452,91 ₸</div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Калькулятор · Казахстан · 5 ноября 2026</p>
+          <h1 id="hero-title"><span data-hero-amount>2 000 ₸</span><br>в DeepSeek —<br><em>это сколько?</em></h1>
+          <p class="lede">Введите сумму, которую готовы положить на баланс. Калькулятор переведёт её в токены, книги, подкасты и дни работы в OpenCode. Цены настоящие. Допущения перечислены внизу.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#compare">Смотреть сравнения</a>
+            <a class="btn btn-link" href="#method">Как считаем <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="hero-facts" aria-label="Короткий итог">
+            <div class="fact"><b data-fact-tokens>4,5 млн</b><span>токенов выхода</span></div>
+            <div class="fact"><b data-fact-books>12</b><span data-fact-books-unit>книг по 300 страниц</span></div>
+            <div class="fact"><b data-fact-days>15,5</b><span data-fact-days-unit>дней в OpenCode</span></div>
+          </div>
+          <p class="fineprint">Не аффилировано с DeepSeek. Курс Нацбанка РК, цены платформы на 5.11.2026.</p>
+        </div>
+
+        <div class="receipt-wrap">
+          <div class="receipt" id="calculator" data-ui>
+            <div class="receipt-head">
+              <span>DeepSeek / top-up</span>
+              <span>KZT → USD</span>
+            </div>
+
+            <label class="amount-label" for="amount">Сумма пополнения</label>
+            <div class="amount-field">
+              <input id="amount" name="amount" type="text" inputmode="numeric" autocomplete="off" value="2 000" aria-describedby="amount-hint">
+              <span class="cur" aria-hidden="true">₸</span>
+            </div>
+            <p class="amount-hint" id="amount-hint">Минимум DeepSeek — $2. Сумма ниже не пройдёт.</p>
+
+            <div class="presets" aria-label="Быстрый выбор суммы">
+              <button type="button" class="chip" data-amount="2000" aria-pressed="true">2 000</button>
+              <button type="button" class="chip" data-amount="5000" aria-pressed="false">5 000</button>
+              <button type="button" class="chip" data-amount="10000" aria-pressed="false">10 000</button>
+              <button type="button" class="chip" data-amount="20000" aria-pressed="false">20 000</button>
+              <button type="button" class="chip" data-amount="50000" aria-pressed="false">50 000</button>
+            </div>
+
+            <div class="controls">
+              <div class="control">
+                <span class="control-label">Модель</span>
+                <div class="seg" role="group" aria-label="Модель">
+                  <button type="button" data-model="flash" aria-pressed="true">Flash</button>
+                  <button type="button" data-model="pro" aria-pressed="false">V4 Pro</button>
+                </div>
+              </div>
+              <div class="control">
+                <span class="control-label">Тариф</span>
+                <div class="seg" role="group" aria-label="Тариф">
+                  <button type="button" data-tariff="peak" aria-pressed="false">Пик</button>
+                  <button type="button" data-tariff="mix" aria-pressed="true">Микс</button>
+                  <button type="button" data-tariff="off" aria-pressed="false">Офф-пик</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="receipt-body" aria-live="polite">
+              <div class="receipt-line"><span>Внесли</span><span data-paid>2 000 ₸</span></div>
+              <div class="receipt-line"><span>Курс НБК</span><span data-rate-line>452,91 ₸/$</span></div>
+              <div class="receipt-line"><span>Налог 6% + банк 2%</span><span data-fees>−$0,33</span></div>
+
+              <div class="receipt-total">
+                <span>На баланс</span>
+                <b>$<span data-balance>4,08</span></b>
+              </div>
+
+              <div class="receipt-line"><span>Токенов на выходе</span><span data-out-tokens>4,5 млн</span></div>
+              <div class="receipt-line"><span>Вход без кэша</span><span data-miss-tokens>18,1 млн</span></div>
+              <div class="receipt-line"><span>Вход из кэша</span><span data-hit-tokens>907 млн</span></div>
+              <div class="receipt-line receipt-days"><span>Хватит на</span><span><b data-days>15,5</b> <span data-days-unit>дней</span></span></div>
+            </div>
+
+            <div class="receipt-foot">
+              <span data-mode-line>OpenCode · Flash · микс · обычно</span>
+              <button type="button" class="copy" id="copy">Скопировать</button>
+            </div>
+          </div>
+          <div class="stamp" aria-hidden="true"><span data-stamp>2 000</span> ₸</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section compare" id="compare" aria-labelledby="compare-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>01 / Сравнения</p>
+            <h2 id="compare-title">Один баланс,<br>десять единиц</h2>
+          </div>
+          <p>Считаем Flash в режиме «микс»: половина запросов в пик, половина в офф-пик. Допущения по токенам — в таблице внизу. Никаких «до 10× быстрее».</p>
+        </div>
+
+        <div class="compare-grid" data-ui>
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">01</span>
+              <h3>Книги по 300 страниц</h3>
+              <p>Черновик и одна редактура. 360 тыс. токенов выхода, 60 тыс. входа.</p>
+            </div>
+            <div class="compare-value"><span data-count="books">12</span><span class="unit" data-unit="books">книг</span></div>
+          </article>
+
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">02</span>
+              <h3>«Война и мир»</h3>
+              <p>Полный текст, 1,05 млн токенов входа. Прочитать целиком и пересказать.</p>
+            </div>
+            <div class="compare-value"><span data-count="war">17</span><span class="unit" data-unit="war">раз</span></div>
+          </article>
+
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">03</span>
+              <h3>Весь «Гарри Поттер»</h3>
+              <p>Семь книг, 2,2 млн токенов входа. Без памяти между книгами.</p>
+            </div>
+            <div class="compare-value"><span data-count="hp">8,2</span><span class="unit" data-unit="hp">серии</span></div>
+          </article>
+
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">04</span>
+              <h3>Двухчасовые подкасты</h3>
+              <p>Расшифровка и выжимка. Один эпизод — 25 тыс. токенов входа.</p>
+            </div>
+            <div class="compare-value"><span data-count="podcasts">585</span><span class="unit" data-unit="podcasts">эпизодов</span></div>
+          </article>
+
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">05</span>
+              <h3>Договоры на 30 страниц</h3>
+              <p>Прочитать, найти риски, вернуть список правок.</p>
+            </div>
+            <div class="compare-value"><span data-count="contracts">394</span><span class="unit" data-unit="contracts">договора</span></div>
+          </article>
+
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">06</span>
+              <h3>Письма и ответы</h3>
+              <p>Короткий ответ на 250 токенов. Без вступлений на три абзаца.</p>
+            </div>
+            <div class="compare-value"><span data-count="emails">12 960</span><span class="unit" data-unit="emails">писем</span></div>
+          </article>
+
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">07</span>
+              <h3>Задачи в OpenCode</h3>
+              <p>Одна задача ≈ 12 запросов агента по 40 тыс. токенов.</p>
+            </div>
+            <div class="compare-value"><span data-count="tasks">103</span><span class="unit" data-unit="tasks">задачи</span></div>
+          </article>
+
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">08</span>
+              <h3>Видео по 10 минут</h3>
+              <p>Транскрипт и конспект. Один ролик — 2,5 тыс. токенов входа.</p>
+            </div>
+            <div class="compare-value"><span data-count="videos">4 904</span><span class="unit" data-unit="videos">видео</span></div>
+          </article>
+
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">09</span>
+              <h3>Резюме под вакансию</h3>
+              <p>Резюме и сопроводительное письмо, 1 200 токенов выхода.</p>
+            </div>
+            <div class="compare-value"><span data-count="resumes">3 558</span><span class="unit" data-unit="resumes">резюме</span></div>
+          </article>
+
+          <article class="compare-item">
+            <div class="compare-copy">
+              <span class="num">10</span>
+              <h3>Кодовые базы по 100 тыс. строк</h3>
+              <p>Прочитать целиком, найти баги, объяснить архитектуру.</p>
+            </div>
+            <div class="compare-value"><span data-count="codebases">13,7</span><span class="unit" data-unit="codebases">баз</span></div>
+          </article>
+        </div>
+
+        <p class="section-note">Числа пересчитываются при смене модели, тарифа и суммы. Книги и «Война и мир» — не метафора: это оценка по токенам, а не обещание, что модель выдаст текст без ошибок.</p>
+      </div>
+    </section>
+
+    <section class="section dark" id="opencode" aria-labelledby="opencode-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>02 / OpenCode</p>
+            <h2 id="opencode-title">Хватит ли на работу,<br>а не на демо</h2>
+          </div>
+          <p>2 000 ₸ — это не месяц агентной разработки. Вот сколько дней при трёх режимах. Flash, микс, 80% контекста из кэша.</p>
+        </div>
+
+        <div class="opencode-grid">
+          <div class="days-block">
+            <div class="days-display"><span data-days-big>15,5</span><span class="days-unit" data-days-big-unit>дней</span></div>
+            <p class="days-label">при режиме «<span data-scenario-name>обычно</span>»</p>
+            <div class="scenario" role="group" aria-label="Режим работы в OpenCode">
+              <button type="button" data-scenario="light" aria-pressed="false">Аккуратно</button>
+              <button type="button" data-scenario="normal" aria-pressed="true">Обычно</button>
+              <button type="button" data-scenario="heavy" aria-pressed="false">Всё подряд</button>
+            </div>
+            <p class="dark-note">«Аккуратно» — 25 запросов в день. «Обычно» — 80. «Всё подряд» — 250 запросов и 70 тыс. токенов контекста на запрос.</p>
+          </div>
+
+          <div class="opencode-meter" data-ui>
+            <div class="metrics">
+              <div class="metric"><b>$<span data-cpd>0,26</span></b><span>в день</span></div>
+              <div class="metric"><b data-req>80</b><span>запросов в день</span></div>
+              <div class="metric"><b data-ctx>40 тыс.</b><span>контекст запроса</span></div>
+            </div>
+
+            <div class="day-strip" id="day-strip" aria-hidden="true"></div>
+            <p class="strip-label"><span data-strip-label>15,5 из 30 дней</span></p>
+
+            <div class="dark-callout">
+              <strong>Кэш решает всё.</strong>
+              <p>Если префикс не совпал, входной токен стоит до 50 раз дороже. Один запрос с контекстом 1 млн токенов — $0,15–$0,30 только на вход. Thinking-токены DeepSeek считаются как выходные; в этих цифрах их нет.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section minus" id="minus" aria-labelledby="minus-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>03 / Минусы</p>
+            <h2 id="minus-title">Что не напишут<br>в промо</h2>
+          </div>
+          <p>Восемь причин, по которым 2 000 ₸ могут кончиться раньше, чем вы думаете. Все проверяемые, ссылки внизу.</p>
+        </div>
+
+        <div class="minus-grid">
+          <article class="minus-item">
+            <span class="num">01</span>
+            <h3>«Пик» — это ваш рабочий день</h3>
+            <p>Пиковые часы DeepSeek: 06:00–09:00 и 11:00–15:00 по Астане. Почти весь рабочий день в Казахстане. В офф-пик те же токены стоят вдвое дешевле.</p>
+          </article>
+          <article class="minus-item">
+            <span class="num">02</span>
+            <h3>Налог и банк съедают около 8%</h3>
+            <p>2 000 ₸ на карте — это не $4,42 на балансе. DeepSeek добавляет 6% налога, банк — спред. Остаётся около $4,08. Минимальное пополнение — $2.</p>
+          </article>
+          <article class="minus-item">
+            <span class="num">03</span>
+            <h3>Данные по умолчанию могут идти в обучение</h3>
+            <p>Политика DeepSeek разрешает использовать ввод для улучшения моделей. Отдельного переключателя для API нет. Не отправляйте чужой код, персональные данные и NDA.</p>
+          </article>
+          <article class="minus-item">
+            <span class="num">04</span>
+            <h3>Баланс предоплатный</h3>
+            <p>Вернуть можно только весь неиспользованный остаток, минус сборы. Потраченное не вернут. Автопополнения и лимита на ключ нет: когда баланс ноль, все ключи получают 402.</p>
+          </article>
+          <article class="minus-item">
+            <span class="num">05</span>
+            <h3>Нет SLA и выбора региона</h3>
+            <p>Один глобальный endpoint, данные обрабатываются в Китае. Лимиты и ошибки 429/503 случаются. Для продакшена нужен запасной провайдер.</p>
+          </article>
+          <article class="minus-item">
+            <span class="num">06</span>
+            <h3>Flash слабее на длинных цепочках</h3>
+            <p>На сложных многошаговых задачах Flash ошибается чаще топовых моделей. Pro стоит в 3,3 раза дороже, но и он не гарантирует результат. Это не Claude и не GPT.</p>
+          </article>
+          <article class="minus-item">
+            <span class="num">07</span>
+            <h3>Кэш помогает не всегда</h3>
+            <p>Поменяли системный промпт, набор инструментов или начало диалога — префикс инвалидирован, платите за вход по полной. В агенте это происходит постоянно.</p>
+          </article>
+          <article class="minus-item">
+            <span class="num">08</span>
+            <h3>Курс и цены уже другие</h3>
+            <p>Считаем по НБК 452,91 ₸/$ и ценам на 5.11.2026. Через месяц цифры изменятся. Калькулятор не обновляется сам: перед пополнением сверьтесь с платформой.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section prices" id="prices" aria-labelledby="prices-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>04 / Тарифы</p>
+            <h2 id="prices-title">Цены, по которым<br>считает калькулятор</h2>
+          </div>
+          <p>Доллары за 1 млн токенов. Пик: 01:00–04:00 и 06:00–10:00 UTC по будням. Для Астаны это 06:00–09:00 и 11:00–15:00.</p>
+        </div>
+
+        <div class="tariff-grid">
+          <div class="table-wrap">
+            <table>
+              <caption class="sr-only">Цены DeepSeek V4.1 Flash и V4 Pro за миллион токенов</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Статья</th>
+                  <th scope="col">Flash</th>
+                  <th scope="col">V4 Pro</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Вход, кэш-хит</th>
+                  <td>$0,006 / $0,003</td>
+                  <td>$0,044 / $0,022</td>
+                </tr>
+                <tr>
+                  <th scope="row">Вход, кэш-мисс</th>
+                  <td>$0,30 / $0,15</td>
+                  <td>$1,32 / $0,66</td>
+                </tr>
+                <tr>
+                  <th scope="row">Выход</th>
+                  <td>$1,20 / $0,60</td>
+                  <td>$3,96 / $1,98</td>
+                </tr>
+                <tr>
+                  <th scope="row">Контекст</th>
+                  <td>1 млн</td>
+                  <td>1 млн</td>
+                </tr>
+                <tr>
+                  <th scope="row">Максимальный выход</th>
+                  <td>384 тыс.</td>
+                  <td>384 тыс.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="table-note">Формат: пик / офф-пик. Офф-пик — половина цены. Выходные и праздники Китая целиком по офф-пику. Источник: <a href="https://api-docs.deepseek.com/quick_start/pricing" target="_blank" rel="noopener">DeepSeek Models &amp; Pricing</a>.</p>
+          </div>
+
+          <aside class="formula" id="method">
+            <p class="panel-label">Формулы</p>
+            <code>баланс = сумма ÷ курс ÷ (1 + налог) × (1 − банк)</code>
+            <code>стоимость = вход × цена входа + выход × цена выхода</code>
+            <code>микс = (пик + офф-пик) ÷ 2</code>
+            <div class="advanced">
+              <label>Курс, ₸/$
+                <input id="rate" type="number" min="1" max="2000" step="0.01" value="452.91">
+              </label>
+              <label>Налог, %
+                <input id="vat" type="number" min="0" max="50" step="0.1" value="6">
+              </label>
+              <label>Банк, %
+                <input id="bank" type="number" min="0" max="20" step="0.1" value="2">
+              </label>
+            </div>
+            <button type="button" class="btn btn-small" id="reset">Вернуть курс и сборы</button>
+          </aside>
+        </div>
+
+        <details class="assumptions">
+          <summary>Допущения по десяти сравнениям <span aria-hidden="true">+</span></summary>
+          <div class="assumptions-body">
+            <table>
+              <thead>
+                <tr><th scope="col">Единица</th><th scope="col">Вход</th><th scope="col">Выход</th><th scope="col">Кэш</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Книга, 300 страниц</td><td>60 тыс.</td><td>360 тыс.</td><td>0%</td></tr>
+                <tr><td>«Война и мир»</td><td>1,05 млн</td><td>2 тыс.</td><td>0%</td></tr>
+                <tr><td>«Гарри Поттер», 7 книг</td><td>2,2 млн</td><td>2 тыс.</td><td>0%</td></tr>
+                <tr><td>Подкаст, 2 часа</td><td>25 тыс.</td><td>1,5 тыс.</td><td>0%</td></tr>
+                <tr><td>Договор, 30 страниц</td><td>30 тыс.</td><td>4 тыс.</td><td>0%</td></tr>
+                <tr><td>Письмо</td><td>400</td><td>250</td><td>0%</td></tr>
+                <tr><td>Задача OpenCode</td><td>480 тыс.</td><td>18 тыс.</td><td>80%</td></tr>
+                <tr><td>Видео, 10 минут</td><td>2,5 тыс.</td><td>300</td><td>0%</td></tr>
+                <tr><td>Резюме + письмо</td><td>300</td><td>1,2 тыс.</td><td>0%</td></tr>
+                <tr><td>Кодовая база, 100 тыс. строк</td><td>1,3 млн</td><td>5 тыс.</td><td>0%</td></tr>
+              </tbody>
+            </table>
+            <p>Задача OpenCode — 12 запросов по 40 тыс. токенов входа и 1,5 тыс. выхода, 80% входа из кэша. Остальные единицы считаются без кэша: это разовый прогон.</p>
+            <p><strong>Чего нет в расчёте:</strong> повторов, неудачных запросов, thinking-токенов, описаний инструментов, поиска и fetch ($0,75 за 1 000 запросов), роста контекста внутри сессии. Реальный расход обычно выше.</p>
+            <p>Оценки токенов приблизительные: 1 русское слово ≈ 2 токена, 300 страниц ≈ 75 тыс. слов. «Война и мир» ≈ 3,2 млн символов.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section verdict" aria-labelledby="verdict-title">
+      <div class="wrap">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>05 / Вердикт</p>
+        <h2 id="verdict-title">Да, если это тест.<br>Нет, если это бюджет на месяц.</h2>
+        <div class="verdict-grid">
+          <div class="verdict-copy">
+            <p>Этой суммы хватает на <strong><span data-verdict-normal>15,5</span> <span data-verdict-normal-unit>дней</span></strong> обычной работы в OpenCode, <strong><span data-verdict-light>104</span> <span data-verdict-light-unit>дней</span></strong> аккуратных вопросов или <strong><span data-verdict-heavy>2,3</span> <span data-verdict-heavy-unit>дня</span></strong> тяжёлой агентной сессии. Этого достаточно, чтобы попробовать Flash и понять, где он ломается.</p>
+            <p>Не рассчитывайте заменить этим подписку на топового агента. Flash дешевле в десятки раз, но на длинных цепочках инструментов чаще теряет контекст. Для продакшена нужен запасной провайдер.</p>
+            <p>Практика: начните с 2 000 ₸. Большие документы читайте в офф-пик. Не отправляйте 1 млн токенов контекста без необходимости. Если понравится, следующее пополнение — 10 000–20 000 ₸: это 2,5–5 месяцев обычной работы.</p>
+            <a class="btn btn-dark" href="#calculator">Пересчитать свою сумму</a>
+          </div>
+          <aside class="verdict-card" data-ui>
+            <div class="verdict-row"><span>Обычная работа</span><b><span data-verdict-row-normal>15,5</span> <span data-verdict-row-normal-unit>дней</span></b></div>
+            <div class="verdict-row"><span>Тяжёлая сессия</span><b><span data-verdict-row-heavy>2,3</span> <span data-verdict-row-heavy-unit>дня</span></b></div>
+            <div class="verdict-row"><span>Только вопросы</span><b><span data-verdict-row-light>104</span> <span data-verdict-row-light-unit>дней</span></b></div>
+            <p>Для текущей суммы. Flash, микс, без thinking-токенов.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="closing">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">deepseek<span>/</span>budget</div>
+          <p>Неофициальный калькулятор. Не аффилирован с DeepSeek.</p>
+          <p class="footer-small">Собрано 5 ноября 2026. Цифры устареют: перед пополнением сверьтесь с платформой.</p>
+        </div>
+        <div>
+          <div class="footer-label">Источники</div>
+          <ul>
+            <li><a href="https://api-docs.deepseek.com/quick_start/pricing" target="_blank" rel="noopener">DeepSeek Models &amp; Pricing</a></li>
+            <li><a href="https://api-docs.deepseek.com/quick_start/agent_integrations/opencode" target="_blank" rel="noopener">DeepSeek + OpenCode</a></li>
+            <li><a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank" rel="noopener">DeepSeek Privacy Policy</a></li>
+            <li><a href="https://nationalbank.kz/" target="_blank" rel="noopener">Нацбанк РК, курс</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-label">Стиль</div>
+          <ul>
+            <li><a href="https://github.com/Leonxlnx/taste-skill" target="_blank" rel="noopener">taste-skill</a></li>
+            <li><a href="https://github.com/ontesseract/no-slop-ai" target="_blank" rel="noopener">no-slop.ai</a></li>
+            <li><a href="https://github.com/abusasa/deepseek-calculator" target="_blank" rel="noopener">Исходники на GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Курс: 452,91 ₸/$ · 5.11.2026</span>
+        <span>Без стоковых фото и выдуманных отзывов</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

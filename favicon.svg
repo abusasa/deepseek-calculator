@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="deepseek budget">
+  <rect width="64" height="64" fill="#f4eee3"/>
+  <rect x="1.5" y="1.5" width="61" height="61" fill="none" stroke="#1d1915" stroke-width="3"/>
+  <text x="32" y="46" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#e14a24">₸</text>
+</svg>
